@@ -165,7 +165,7 @@ namespace netDxf.IO
             if (version < DxfVersion.AutoCad2007)
             {
 
-#if !NET461_OR_GREATER
+#if !NET4X
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 #endif
 
